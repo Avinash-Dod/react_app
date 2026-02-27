@@ -6,7 +6,7 @@ const Auth = () => {
     const [status, setStatus] = useState({ message: '', type: '' });
     const [user, setUser] = useState(null);
 
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+    const API_URL = import.meta.env.VITE_API_URL + '/api';
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
